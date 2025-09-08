@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-name: Deploy Chinese Site to GitHub Pages
-=======
-name: Deploy English Site to GitHub Pages
->>>>>>> refs/remotes/origin/main
+name: Deploy Site to GitHub Pages
 
 on:
   push:
@@ -32,14 +28,12 @@ jobs:
         run: npm ci
 
       - name: Build with VitePress
-<<<<<<< HEAD
-        run: npm run docs:build:zh
-=======
-        run: npm run docs:build:en
->>>>>>> refs/remotes/origin/main
+        run: npm run docs:build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
 
   deploy:
     environment:
