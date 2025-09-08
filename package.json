@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "AgentPsy - VitePress双语网站",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "docs:build:en": "vitepress build docs --config docs/.vitepress/config.en.js",
-    "docs:build:zh": "vitepress build docs --config docs/.vitepress/config.zh.js"
+    "docs:build:en": "vitepress build docs --config docs/.vitepress/config.en.mjs",
+    "docs:build:zh": "vitepress build docs --config docs/.vitepress/config.zh.mjs"
   },
   "keywords": [
     "vitepress",
