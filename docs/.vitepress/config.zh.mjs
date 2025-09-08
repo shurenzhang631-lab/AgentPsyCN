@@ -23,7 +23,8 @@ export default defineConfig({
             { text: '快速开始', link: '/documentation/quick-start' },
             { text: '测评方法论', link: '/documentation/methodology' },
             { text: '数据隐私与安全', link: '/documentation/security' },
-            { text: '故障排除', link: '/documentation/troubleshooting' }
+            { text: '故障排除', link: '/documentation/troubleshooting' },
+            { text: '产品白皮书', link: '/documentation/whitepaper' }
           ]
         }
       ]

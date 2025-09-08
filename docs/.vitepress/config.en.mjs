@@ -23,7 +23,8 @@ export default defineConfig({
             { text: 'Quick Start', link: '/documentation/quick-start' },
             { text: 'Assessment Methodology', link: '/documentation/methodology' },
             { text: 'Data Privacy and Security', link: '/documentation/security' },
-            { text: 'Troubleshooting', link: '/documentation/troubleshooting' }
+            { text: 'Troubleshooting', link: '/documentation/troubleshooting' },
+            { text: 'White Paper', link: '/documentation/whitepaper' }
           ]
         }
       ]
