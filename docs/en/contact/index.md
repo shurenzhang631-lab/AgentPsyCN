@@ -83,8 +83,8 @@ Email subject format: Position Applied-Name-Contact Information
 We highly value user feedback and suggestions. You can contact us through the following channels:
 
 1. **Feedback Email** - feedback@agentpsy.org
-2. **Online Form** - [Click to fill out feedback form](/feedback/form)
-3. **Community Forum** - Post on [community forum](https://community.agentpsy.org)
+2. **在线表单** - [点击填写反馈表单](/feedback/form)
+3. **社区论坛** - Post on [community forum](https://community.agentpsy.org)
 4. **Social Media** - Follow our official Weibo and WeChat public account
 
 ### Issue Reporting
