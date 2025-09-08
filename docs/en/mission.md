@@ -1,26 +1,14 @@
-# Mission
+# Project Mission
 
-## Our Mission
+The AgentPsy project is dedicated to assessing and analyzing the personality traits and cognitive stability of large language models through scientific methods. We believe that understanding and mastering the intrinsic characteristics of AI systems is crucial for building safer and more reliable artificial intelligence applications.
 
-AgentPsy is dedicated to addressing the core challenges in artificial intelligence - making AI understandable, predictable, and trustworthy.
+## Core Objectives
 
-### Black Box Problem
-1. **Cognitive Opacity Crisis** - How LLMs "think" internally is completely unknowable
-2. **Behavioral Inconsistency** - The same AI performs vastly differently in different scenarios
-3. **Loss of Control Risk** - Inability to predict AI behavior under stress or interference
-4. **Selection Difficulty** - Facing hundreds of models, not knowing which is suitable for what task
+- **Scientific Assessment**: Develop and apply scientific evaluation methods to comprehensively analyze the personality traits of large language models.
+- **Cognitive Stability Research**: Conduct in-depth research on the cognitive stability and consistency of models in different contexts.
+- **Open and Transparent**: Publicize our evaluation methods and results to promote exchange and collaboration between academia and industry.
+- **Application-Oriented**: Apply research results to real-world scenarios to enhance the reliability and safety of AI systems.
 
-### Product Essence
+## Vision
 
-AgentPsy is the "psychological CT scanner" and "personality analyzer" for AI:
-
-- **Cognitive Perspective** - Mapping LLMs' "cognitive patterns" and "personality traits" through psychological assessment questionnaires
-- **Stress Testing** - Applying interference in controlled environments to observe AI's "psychological stability"
-- **Role Consistency** - Testing AI's behavioral consistency under different role settings
-- **Capability Boundaries** - Precisely delineating each model's capability range and failure modes
-
-### Ultimate Value Proposition
-
-Making the originally unknowable AI **understandable, predictable, and trustworthy**.
-
-We believe that only by truly understanding AI's cognitive characteristics and behavioral patterns can we safely and effectively apply these powerful technologies. AgentPsy provides quantitative assessment for AI reliability and safety through scientific psychological methods, helping users make informed technical choices.
+We hope that through the AgentPsy project, we can contribute to the healthy development of artificial intelligence and promote the construction of a more trustworthy and controllable AI ecosystem.
