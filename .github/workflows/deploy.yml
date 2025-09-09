@@ -37,10 +37,21 @@ jobs:
       - name: Build with VitePress
         run: npm run docs:build
 
+      - name: Verify build output
+        run: |
+          ls -la
+          ls -la docs/.vitepress/
+          ls -la docs/.vitepress/dist/
+
+      - name: Create _site directory
+        run: |
+          mkdir -p _site
+          cp -r docs/.vitepress/dist/* _site/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs/.vitepress/dist
+          path: ./_site
 
   # Deployment job
   deploy:
