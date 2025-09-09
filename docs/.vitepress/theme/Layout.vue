@@ -47,9 +47,24 @@
 <script setup>
 import { useData } from 'vitepress'
 
-const { site } = useData()
+const { site, page } = useData()
 
-const navItems = site.value.themeConfig.nav || []
+// 获取当前页面的语言
+const currentLang = page.value.lang || 'zh-CN'
+
+// 根据语言获取导航项
+const getNavItems = () => {
+  if (site.value.themeConfig.locales) {
+    if (currentLang === 'zh-CN' && site.value.themeConfig.locales['/']) {
+      return site.value.themeConfig.locales['/'].nav || []
+    } else if (currentLang === 'en-US' && site.value.themeConfig.locales['/en/']) {
+      return site.value.themeConfig.locales['/en/'].nav || []
+    }
+  }
+  return site.value.themeConfig.nav || []
+}
+
+const navItems = getNavItems()
 </script>
 
 <style scoped>
