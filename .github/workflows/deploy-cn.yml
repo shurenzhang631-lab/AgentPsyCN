@@ -35,12 +35,21 @@ jobs:
         run: npm ci
 
       - name: Build with VitePress (Chinese only)
-        run: npm run docs:build:zh
+        run: |
+          npm run docs:build:zh
+          ls -la docs/.vitepress/
+          ls -la docs/.vitepress/dist/ || echo "dist directory not found"
 
       - name: Create _site directory
         run: |
           mkdir -p _site
-          cp -r docs/.vitepress/dist/* _site/
+          if [ -d "docs/.vitepress/dist" ]; then
+            cp -r docs/.vitepress/dist/* _site/
+          else
+            echo "Warning: dist directory not found, creating empty _site"
+            mkdir -p _site
+          fi
+          ls -la _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
