@@ -1,4 +1,4 @@
-name: Deploy English Site to GitHub Pages
+name: Deploy Chinese Site to GitHub Pages
 
 on:
   push:
@@ -34,8 +34,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build with VitePress (English only)
-        run: npm run docs:build:en
+      - name: Build with VitePress (Chinese only)
+        run: npm run docs:build:zh
 
       - name: Create _site directory
         run: |
