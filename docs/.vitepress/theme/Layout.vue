@@ -7,6 +7,10 @@
           <li v-for="item in navItems" :key="item.text">
             <a :href="item.link">{{ item.text }}</a>
           </li>
+          <li class="lang-switch">
+            <a v-if="currentLang === 'zh-CN'" href="/en/">English</a>
+            <a v-else href="/">中文</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -19,11 +23,14 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h4>AgentPsy</h4>
-            <p>专业的大语言模型人格与认知稳定性评估平台</p>
+            <h4 v-if="currentLang === 'zh-CN'">AgentPsy</h4>
+            <h4 v-else>AgentPsy</h4>
+            <p v-if="currentLang === 'zh-CN'">专业的大语言模型人格与认知稳定性评估平台</p>
+            <p v-else>Professional LLM Personality and Cognitive Stability Assessment Platform</p>
           </div>
           <div class="footer-section">
-            <h4>快速链接</h4>
+            <h4 v-if="currentLang === 'zh-CN'">快速链接</h4>
+            <h4 v-else>Quick Links</h4>
             <ul>
               <li v-for="item in navItems" :key="item.text">
                 <a :href="item.link">{{ item.text }}</a>
@@ -31,13 +38,15 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h4>联系方式</h4>
-            <p>邮箱: contact@agentpsy.org</p>
-            <p>电话: +86-571-8795-xxxx</p>
+            <h4 v-if="currentLang === 'zh-CN'">联系方式</h4>
+            <h4 v-else>Contact</h4>
+            <p v-if="currentLang === 'zh-CN'">邮箱: <a href="mailto:contact@agentpsy.org">contact@agentpsy.org</a></p>
+            <p v-else>Email: <a href="mailto:contact@agentpsy.org">contact@agentpsy.org</a></p>
           </div>
         </div>
         <div class="copyright">
-          <p>© 2025 AgentPsy. 保留所有权利。</p>
+          <p v-if="currentLang === 'zh-CN'">© 2025 AgentPsy. 保留所有权利。</p>
+          <p v-else>© 2025 AgentPsy. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -120,8 +129,15 @@ const navItems = getNavItems()
   color: #3498db;
 }
 
-main {
-  flex: 1;
+.lang-switch {
+  background-color: #3498db;
+  border-radius: 4px;
+}
+
+.lang-switch a {
+  color: white !important;
+  padding: 0.5rem 1rem;
+  display: block;
 }
 
 .agentpsy-footer {

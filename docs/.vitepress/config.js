@@ -25,7 +25,7 @@ export default defineConfig({
         description: '大语言模型人格与认知稳定性科学评估',
         nav: [
           { text: '首页', link: '/' },
-          { text: 'Mission', link: '/mission/' },
+          { text: '使命', link: '/mission/' },
           { text: '关于我们', link: '/about/' },
           { text: '产品', link: '/products/' },
           { text: '文档', link: '/documentation/' },
